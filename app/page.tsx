@@ -12,7 +12,6 @@ const works = [
   {
     slug: "guseul",
     title: "Guseul",
-    description: "A squishy glass marble in the browser.",
     video: "/work/guseul/demo.mp4",
     poster: "/work/guseul/preview.webp",
     demo: "https://studio.jiiwon.com/guseul/",
@@ -42,15 +41,11 @@ export default function Home() {
                 src={work.video}
                 poster={work.poster}
               />
-              <div className={styles.details}>
-                <div>
-                  <h2 className={styles.title}>{work.title}</h2>
-                  <p className={styles.description}>{work.description}</p>
-                </div>
-                <a className={styles.link} href={work.demo}>
-                  Live demo
+              <h2 className={styles.title}>
+                <a className={styles.workLink} href={work.demo}>
+                  {work.title}
                 </a>
-              </div>
+              </h2>
             </article>
           ))}
         </div>
