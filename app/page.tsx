@@ -17,6 +17,14 @@ const works = [
     poster: "/work/guseul/preview.webp",
     demo: "https://studio.jiiwon.com/guseul/",
   },
+  {
+    slug: "cursor-cat",
+    title: "Cursor Cat",
+    description: "A cat that follows your cursor.",
+    video: "/work/cursor-cat/demo.mp4",
+    poster: "/work/cursor-cat/preview.webp",
+    demo: "https://studio.jiiwon.com/cursor-cat/",
+  },
 ];
 
 export default function Home() {
