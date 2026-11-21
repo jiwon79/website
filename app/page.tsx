@@ -12,6 +12,7 @@ const works = [
   {
     slug: "guseul",
     title: "Guseul",
+    date: "2026-07-25",
     description: "A squishy glass marble.",
     video: "/work/guseul/demo.mp4",
     poster: "/work/guseul/preview.webp",
@@ -20,12 +21,38 @@ const works = [
   {
     slug: "cursor-cat",
     title: "Cursor Cat",
+    date: "2026-08-30",
     description: "A cat that follows your cursor.",
     video: "/work/cursor-cat/demo.mp4",
     poster: "/work/cursor-cat/preview.webp",
     demo: "https://studio.jiiwon.com/cursor-cat/",
   },
+  {
+    slug: "rose-glass",
+    title: "Rose Glass",
+    date: "2026-09-25",
+    description: "Frosted glass you can stretch.",
+    video: "/work/rose-glass/demo.mp4",
+    poster: "/work/rose-glass/preview.webp",
+    demo: "https://studio.jiiwon.com/rose-glass/",
+  },
+  {
+    slug: "cursive",
+    title: "Cursive",
+    date: "2026-10-12",
+    description: "Animated cursive lettering.",
+    video: "/work/cursive/demo.mp4",
+    poster: "/work/cursive/preview.webp",
+    demo: "https://studio.jiiwon.com/cursive/",
+  },
 ];
+
+const dateFormat = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+});
 
 export default function Home() {
   return (
@@ -50,11 +77,16 @@ export default function Home() {
                 src={work.video}
                 poster={work.poster}
               />
-              <h2 className={styles.title}>
-                <a className={styles.workLink} href={work.demo}>
-                  {work.title}
-                </a>
-              </h2>
+              <div className={styles.workHeading}>
+                <h2 className={styles.title}>
+                  <a className={styles.workLink} href={work.demo}>
+                    {work.title}
+                  </a>
+                </h2>
+                <time className={styles.date} dateTime={work.date}>
+                  {dateFormat.format(new Date(work.date))}
+                </time>
+              </div>
               <p className={styles.description}>{work.description}</p>
             </article>
           ))}

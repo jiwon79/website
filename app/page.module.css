@@ -66,12 +66,25 @@
   height: 100%;
 }
 
-.title {
+.workHeading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
   margin-top: 12px;
   margin-bottom: 4px;
+}
+
+.title {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
+}
+
+.date {
+  flex: none;
+  color: #666;
+  font-size: 12px;
 }
 
 .description {
@@ -109,5 +122,4 @@
   .page {
     width: calc(100% - 40px);
   }
-
 }
