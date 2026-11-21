@@ -39,10 +39,15 @@ export default function WorkVideo({
   }
 
   return (
-    <div className={styles.preview}>
+    <button
+      className={styles.preview}
+      type="button"
+      aria-label={`${playing ? "Pause" : "Play"} ${title} video`}
+      onClick={togglePlayback}
+    >
       <video
         ref={videoRef}
-        aria-label={`${title} demo video`}
+        aria-hidden="true"
         className={styles.video}
         src={src}
         poster={poster}
@@ -53,23 +58,6 @@ export default function WorkVideo({
         onPlay={() => setPlaying(true)}
         onPause={() => setPlaying(false)}
       />
-      <button
-        className={styles.playback}
-        type="button"
-        aria-label={`${playing ? "Pause" : "Play"} ${title} video`}
-        onClick={togglePlayback}
-      >
-        {playing ? (
-          <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16" fill="currentColor">
-            <rect x="6" y="4" width="2.5" height="12" rx=".5" />
-            <rect x="11.5" y="4" width="2.5" height="12" rx=".5" />
-          </svg>
-        ) : (
-          <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16" fill="currentColor">
-            <path d="M7 4.5v11l9-5.5z" />
-          </svg>
-        )}
-      </button>
-    </div>
+    </button>
   );
 }

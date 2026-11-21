@@ -27,7 +27,8 @@
   letter-spacing: -0.055em;
 }
 
-.role {
+.role,
+.description {
   color: #666;
   font-size: 15px;
   line-height: 1.5;
@@ -49,12 +50,14 @@
 }
 
 .preview {
-  position: relative;
+  display: block;
+  width: 100%;
   overflow: hidden;
   aspect-ratio: 16 / 9;
   border: 1px solid #eeede8;
-  border-radius: 12px;
+  border-radius: 16px;
   background: #fffefb;
+  cursor: pointer;
 }
 
 .video {
@@ -63,30 +66,16 @@
   height: 100%;
 }
 
-.playback {
-  position: absolute;
-  right: 12px;
-  bottom: 12px;
-  display: grid;
-  width: 44px;
-  height: 44px;
-  place-items: center;
-  border: 1px solid #e7e6e1;
-  border-radius: 50%;
-  background: #fff;
-  color: #444;
-  cursor: pointer;
-}
-
-.playback:hover {
-  background: #f3f3f1;
-}
-
 .title {
-  margin-top: 16px;
-  font-size: 17px;
-  font-weight: 600;
-  letter-spacing: -0.025em;
+  margin-top: 12px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.description {
+  font-size: 13px;
 }
 
 .link,
@@ -111,7 +100,7 @@
 
 .link:focus-visible,
 .workLink:focus-visible,
-.playback:focus-visible {
+.preview:focus-visible {
   outline: 2px solid #202020;
   outline-offset: 4px;
 }
@@ -121,8 +110,4 @@
     width: calc(100% - 40px);
   }
 
-  .playback {
-    right: 8px;
-    bottom: 8px;
-  }
 }

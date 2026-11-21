@@ -12,6 +12,7 @@ const works = [
   {
     slug: "guseul",
     title: "Guseul",
+    description: "A squishy glass marble.",
     video: "/work/guseul/demo.mp4",
     poster: "/work/guseul/preview.webp",
     demo: "https://studio.jiiwon.com/guseul/",
@@ -46,6 +47,7 @@ export default function Home() {
                   {work.title}
                 </a>
               </h2>
+              <p className={styles.description}>{work.description}</p>
             </article>
           ))}
         </div>
