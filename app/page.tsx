@@ -45,6 +45,15 @@ const works = [
     poster: "/work/cursive/preview.webp",
     demo: "https://studio.jiiwon.com/cursive/",
   },
+  {
+    slug: "gentle-monster",
+    title: "Gentle Monster",
+    date: "2026-05-02",
+    description: "An interactive eyewear catalog.",
+    video: "/work/gentle-monster/demo.mp4",
+    poster: "/work/gentle-monster/preview.webp",
+    demo: "https://studio.jiiwon.com/gentle-monster/",
+  },
 ];
 
 const dateFormat = new Intl.DateTimeFormat("en-US", {
