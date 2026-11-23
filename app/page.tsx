@@ -54,7 +54,16 @@ const works = [
     poster: "/work/gentle-monster/preview.webp",
     demo: "https://studio.jiiwon.com/gentle-monster/",
   },
-];
+  {
+    slug: "akmu-paradise",
+    title: "AKMU Paradise",
+    date: "2026-04-26",
+    description: "Draw a trail of flowers through a meadow.",
+    video: "/work/akmu-paradise/demo.mp4",
+    poster: "/work/akmu-paradise/preview.webp",
+    demo: "https://studio.jiiwon.com/akmu-paradise/",
+  },
+].sort((first, second) => second.date.localeCompare(first.date));
 
 const dateFormat = new Intl.DateTimeFormat("en-US", {
   month: "short",
