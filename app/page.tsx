@@ -10,6 +10,15 @@ export const metadata: Metadata = {
 
 const works = [
   {
+    slug: "smile-flower",
+    title: "Smile Flower",
+    date: "2026-09-13",
+    description: "Swipe to flip the tiles. Press and release to send a wave across the grid.",
+    video: "/work/smile-flower/demo.mp4",
+    poster: "/work/smile-flower/preview.webp",
+    demo: "https://studio.jiiwon.com/smile-flower/",
+  },
+  {
     slug: "guseul",
     title: "Guseul",
     date: "2026-07-25",
