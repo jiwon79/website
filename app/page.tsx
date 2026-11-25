@@ -10,6 +10,15 @@ export const metadata: Metadata = {
 
 const works = [
   {
+    slug: "glow-dice",
+    title: "Glow Dice",
+    date: "2026-10-03",
+    description: "Drag across a wall of dice to leave a trail of glowing pips.",
+    video: "/work/glow-dice/demo.mp4",
+    poster: "/work/glow-dice/preview.webp",
+    demo: "https://studio.jiiwon.com/glow-dice/",
+  },
+  {
     slug: "smile-flower",
     title: "Smile Flower",
     date: "2026-09-13",
