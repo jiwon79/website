@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Experience from "./experience";
 import WorkVideo from "./work-video";
 import styles from "./page.module.css";
 
@@ -111,6 +112,8 @@ export default function Home() {
           Résumé
         </Link>
       </header>
+
+      <Experience />
 
       <section aria-labelledby="work-heading">
         <h1 id="work-heading" className={styles.heading}>Work</h1>
