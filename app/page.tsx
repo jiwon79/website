@@ -10,6 +10,15 @@ export const metadata: Metadata = {
 
 const works = [
   {
+    slug: "line-pull",
+    title: "Line Pull",
+    date: "2026-09-01",
+    description: "Pull the lines apart to uncover hidden messages.",
+    video: "/work/line-pull/demo.mp4",
+    poster: "/work/line-pull/preview.webp",
+    demo: "https://studio.jiiwon.com/line-pull/",
+  },
+  {
     slug: "glow-dice",
     title: "Glow Dice",
     date: "2026-10-03",
