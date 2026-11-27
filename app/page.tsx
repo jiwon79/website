@@ -100,6 +100,15 @@ const works = [
     poster: "/work/akmu-paradise/preview.webp",
     demo: "https://studio.jiiwon.com/akmu-paradise/",
   },
+  {
+    slug: "pixar-rapunzel",
+    title: "Pixar Rapunzel",
+    date: "2026-04-11",
+    description: "Run your finger through the hair and watch it swing.",
+    video: "/work/pixar-rapunzel/demo.mp4",
+    poster: "/work/pixar-rapunzel/preview.webp",
+    demo: "https://studio.jiiwon.com/pixar-rapunzel/",
+  },
 ].sort((first, second) => second.date.localeCompare(first.date));
 
 const dateFormat = new Intl.DateTimeFormat("en-US", {
