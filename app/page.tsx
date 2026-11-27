@@ -11,6 +11,15 @@ export const metadata: Metadata = {
 
 const works = [
   {
+    slug: "color-text",
+    title: "Color Text",
+    date: "2026-08-06",
+    description: "Press and drag to let color drip down through the words.",
+    video: "/work/color-text/demo.mp4",
+    poster: "/work/color-text/preview.webp",
+    demo: "https://studio.jiiwon.com/color-text/",
+  },
+  {
     slug: "line-pull",
     title: "Line Pull",
     date: "2026-09-01",
