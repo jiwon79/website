@@ -109,6 +109,15 @@ const works = [
     poster: "/work/pixar-rapunzel/preview.webp",
     demo: "https://studio.jiiwon.com/pixar-rapunzel/",
   },
+  {
+    slug: "soft-forms",
+    title: "Soft Forms",
+    date: "2026-09-27",
+    description: "A fuzzy little character that breathes. Press and hold to squish it.",
+    video: "/work/soft-forms/demo.mp4",
+    poster: "/work/soft-forms/preview.webp",
+    demo: "https://studio.jiiwon.com/soft-forms/",
+  },
 ].sort((first, second) => second.date.localeCompare(first.date));
 
 const dateFormat = new Intl.DateTimeFormat("en-US", {
